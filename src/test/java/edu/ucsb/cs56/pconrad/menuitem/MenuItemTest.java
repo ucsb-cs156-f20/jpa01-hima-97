@@ -42,7 +42,7 @@ public class MenuItemTest {
 
      @Test
     public void test_getPrice_8() {
-        assertEquals("$1.0", smallPokeBowl.getPrice(8));
+        assertEquals("$9", smallPokeBowl.getPrice(8));
     }
 
 
