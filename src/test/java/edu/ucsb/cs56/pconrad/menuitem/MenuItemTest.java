@@ -62,6 +62,7 @@ public class MenuItemTest {
 
     @Test
     public void test_getPriceInCents() {
+	    
         assertEquals (1049, smallPokeBowl.getPriceInCents());
     }
 
