@@ -9,10 +9,12 @@ import org.junit.Before;
 public class MenuItemTest {
 
     private MenuItem smallPokeBowl;
+    private MenuItem smallPokeBowl2;
 
     @Before
     public void setUp() {
         smallPokeBowl = new MenuItem("Small Poke Bowl", 1049, "Poke Bowls");
+	smallPokeBowl2 = new MenuItem("Small Poke Bowl", 9, "Poke Bowls");
     }
 
     @Test
@@ -42,7 +44,7 @@ public class MenuItemTest {
 
      @Test
     public void test_getPrice_8() {
-        assertEquals("$9", smallPokeBowl.getPrice(8));
+        assertEquals("$0.09", smallPokeBowl2.getPrice());
     }
 
 
