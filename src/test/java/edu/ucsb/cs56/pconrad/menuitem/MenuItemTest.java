@@ -40,6 +40,12 @@ public class MenuItemTest {
         smallPokeBowl.getPrice(5);
     }
 
+     @Test
+    public void test_getPrice_8() {
+        assertEquals("$1.0", smallPokeBowl.getPrice(8));
+    }
+
+
     @Test(expected = MenuItem.TooNarrowException.class)
     public void test_getPrice_0() {
         smallPokeBowl.getPrice(0);
